@@ -47,6 +47,8 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim" -- colorscheme
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
