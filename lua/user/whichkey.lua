@@ -8,7 +8,7 @@ local mappings = {
     x = {":bdelete<cr>", "Close"},
     f = {"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", "Find File"},
     t = {":Telescope live_grep<cr>", "Find Text"},
-    e = {":NvimTreeToggle<cr>", "File Tree"}
+    e = {":NvimTreeToggle<cr>", "File Tree"},
 }
 
 local opts = {

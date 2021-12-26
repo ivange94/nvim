@@ -102,15 +102,7 @@ return packer.startup(function(use)
       end
   }
 
-  use {
-      "folke/trouble.nvim",
-      requires = "kyazdani42/nvim-web-devicons",
-      cmd = "TroubleToggle",
-      config = function ()
-          require("trouble").setup {}
-      end
-    }
-  use {
+ use {
     'romgrk/barbar.nvim',
     requires = {'kyazdani42/nvim-web-devicons'}
   }
