@@ -58,7 +58,18 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-  use "akinsho/bufferline.nvim"
+
+  use {
+        "akinsho/bufferline.nvim",
+        config = function ()
+            require("bufferline").setup{
+                options = {
+                    offsets = {{ filetype = "NvimTree", text = "File Explorer", highlight = "Directory", text_align = "left"}},
+                }
+            }
+        end
+  }
+
   use "moll/vim-bbye"
 
   -- snippets
@@ -102,10 +113,10 @@ return packer.startup(function(use)
       end
   }
 
- use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
+ -- use {
+ --    'romgrk/barbar.nvim',
+ --    requires = {'kyazdani42/nvim-web-devicons'}
+ --  }
 
   use "folke/which-key.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
