@@ -59,16 +59,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
 
-  use {
-        "akinsho/bufferline.nvim",
-        config = function ()
-            require("bufferline").setup{
-                options = {
-                    offsets = {{ filetype = "NvimTree", text = "File Explorer", highlight = "Directory", text_align = "left"}},
-                }
-            }
-        end
-  }
+  use "akinsho/bufferline.nvim"
 
   use "moll/vim-bbye"
 
