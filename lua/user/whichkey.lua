@@ -9,6 +9,7 @@ local mappings = {
     t = {":Telescope live_grep<cr>", "Find Text"},
     e = {":NvimTreeToggle<cr>", "File Tree"},
     q = {":q!<cr>", "Quit"},
+    x = {"<cmd>bd<cr>", "Close Buffer"}
 }
 
 local opts = {
