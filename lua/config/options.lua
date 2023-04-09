@@ -2,7 +2,6 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 vim.opt.swapfile = false
--- how to make the below option exclude the neo tree buffer?
 vim.opt.winbar = "%=%m %f"
 
 -- vim.api.nvim_set_keymap("i", "<TAB>", 'copilot#Accept("<TAB>")', { silent = true, expr = true })
