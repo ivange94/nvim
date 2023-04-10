@@ -17,6 +17,7 @@ vim.keymap.set("n", "<leader>w", "<cmd>w<cr>")
 vim.keymap.set("n", "<Tab>", ":bnext<CR>")
 vim.keymap.set("n", "<S-Tab>", ":bprev<CR>")
 vim.keymap.set("n", "<leader>;", ":")
+vim.keymap.set("n", "<leader>x", ":bd<CR>")
 
 -- floating terminal
 vim.keymap.set("n", "<leader>ft", function()
